@@ -1,7 +1,65 @@
-# Bypassing Iranian Internet Censorship
+
+<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 49.</p>
+<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
+
+<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
+<a href="#gdcalert2">alert2</a>
+<a href="#gdcalert3">alert3</a>
+<a href="#gdcalert4">alert4</a>
+<a href="#gdcalert5">alert5</a>
+<a href="#gdcalert6">alert6</a>
+<a href="#gdcalert7">alert7</a>
+<a href="#gdcalert8">alert8</a>
+<a href="#gdcalert9">alert9</a>
+<a href="#gdcalert10">alert10</a>
+<a href="#gdcalert11">alert11</a>
+<a href="#gdcalert12">alert12</a>
+<a href="#gdcalert13">alert13</a>
+<a href="#gdcalert14">alert14</a>
+<a href="#gdcalert15">alert15</a>
+<a href="#gdcalert16">alert16</a>
+<a href="#gdcalert17">alert17</a>
+<a href="#gdcalert18">alert18</a>
+<a href="#gdcalert19">alert19</a>
+<a href="#gdcalert20">alert20</a>
+<a href="#gdcalert21">alert21</a>
+<a href="#gdcalert22">alert22</a>
+<a href="#gdcalert23">alert23</a>
+<a href="#gdcalert24">alert24</a>
+<a href="#gdcalert25">alert25</a>
+<a href="#gdcalert26">alert26</a>
+<a href="#gdcalert27">alert27</a>
+<a href="#gdcalert28">alert28</a>
+<a href="#gdcalert29">alert29</a>
+<a href="#gdcalert30">alert30</a>
+<a href="#gdcalert31">alert31</a>
+<a href="#gdcalert32">alert32</a>
+<a href="#gdcalert33">alert33</a>
+<a href="#gdcalert34">alert34</a>
+<a href="#gdcalert35">alert35</a>
+<a href="#gdcalert36">alert36</a>
+<a href="#gdcalert37">alert37</a>
+<a href="#gdcalert38">alert38</a>
+<a href="#gdcalert39">alert39</a>
+<a href="#gdcalert40">alert40</a>
+<a href="#gdcalert41">alert41</a>
+<a href="#gdcalert42">alert42</a>
+<a href="#gdcalert43">alert43</a>
+<a href="#gdcalert44">alert44</a>
+<a href="#gdcalert45">alert45</a>
+<a href="#gdcalert46">alert46</a>
+<a href="#gdcalert47">alert47</a>
+<a href="#gdcalert48">alert48</a>
+<a href="#gdcalert49">alert49</a>
+
+<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
 
 
-## A Comprehensive Guide to Using Starlink, Mikrotik Router, and OpenVPN for Secure Remote Access
+
+# Bypassing Iranian Internet Censorship 
+
+
+## A Comprehensive Guide to Using **Starlink**, **Mikrotik Router**, and **OpenVPN** for Secure Remote Access
 
 
 ## Introduction
@@ -83,11 +141,11 @@ Depending on your familiarity with networking, OpenVPN, and Mikrotik routers, al
 ### **Topology**
 
 
-## <p dir="rtl">
+
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-
-<img src="images/image1.png" width="" alt="alt_text" title="image_tooltip">
+![alt_text](images/image1.png "image_tooltip")
 
 
 
@@ -112,22 +170,6 @@ Depending on your familiarity with networking, OpenVPN, and Mikrotik routers, al
 * Go to the Setting Menu and deselect Hide Password (to make things easier).
 
 
-#### Milestone 1
-
-If you have trouble logging in, you can find the IP 192.168.88.1 under the Neighbors tab and log in from there.
-
-If this IP does not appear in the neighbors list, please physically reset the router and try again.
-
-Sometimes the IP might not work, and you need to click on the MAC Address column record to replace the IP with the MAC address in the Connect To field. The MAC address associated with IP 192.168.88.1 is obscured in this image.
-
-
-
-
-
-![alt_text](images/image2.png "image_tooltip")
-
-
-
 ### **Remove Slave from Interface**
 
 <span style="text-decoration:underline;">In some routers</span>, `wifi2` or `ether2` are set as slaves by default. This setting needs to be disabled.
@@ -139,18 +181,6 @@ Sometimes the IP might not work, and you need to click on the MAC Address column
 * For `wifi2`: Right-click and select **Remove**
 
 **Note**: <span style="text-decoration:underline;">In some cases</span>, `wifi2` and `ether2` might not be listed under Ports. If this is the case, you can proceed to the next step.
-
-
-#### Milestone 2
-
-If `ether2` and `wifi2` are listed here and you still have internet through LAN despite turning off your WiFi, removing `ether2` and `wifi2` should disconnect your LAN internet.
-
-
-
-
-
-![alt_text](images/image3.png "image_tooltip")
-
 
 
 #### Backup
@@ -184,9 +214,10 @@ By enabling Wireless Station Mode, we can set up the WiFi Client. To enable Wire
 
 
 
+<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image4.png "image_tooltip")
+![alt_text](images/image2.png "image_tooltip")
 
 
 
@@ -201,9 +232,10 @@ Configure the Wireless Station to connect to the Starlink WiFi SSID:
 
 
 
+<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](images/image3.png "image_tooltip")
 
 
 
@@ -215,9 +247,10 @@ Configure the Wireless Station to connect to the Starlink WiFi SSID:
 
 
 
+<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image6.png "image_tooltip")
+![alt_text](images/image4.png "image_tooltip")
 
 
 
@@ -230,19 +263,23 @@ Configure the Wireless Station to connect to the Starlink WiFi SSID:
 
 
 
-
-![alt_text](images/image7.png "image_tooltip")
-
+<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-#### Milestone 3
+![alt_text](images/image5.png "image_tooltip")
+
+
+
+#### Milestone
 
 If you have followed the steps correctly, the status of `wifi2` should show as `RMB` or `RSMB`. The letter `R` in the status column indicates that the interface is running.
 
 
 
+<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-![alt_text](images/image8.png "image_tooltip")
+
+![alt_text](images/image6.png "image_tooltip")
 
 
 
@@ -257,8 +294,10 @@ If you have followed the steps correctly, the status of `wifi2` should show as `
 
 
 
+<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-![alt_text](images/image9.png "image_tooltip")
+
+![alt_text](images/image7.png "image_tooltip")
 
 
 
@@ -275,9 +314,10 @@ If you have followed the steps correctly, the status of `wifi2` should show as `
 
 
 
+<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image10.png "image_tooltip")
+![alt_text](images/image8.png "image_tooltip")
 
 
 
@@ -298,9 +338,10 @@ Here we will define rules for two NATs, one for `wifi2` and one for `ethernet2`.
 
 
 
+<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image11.png "image_tooltip")
+![alt_text](images/image9.png "image_tooltip")
 
 
 
@@ -311,9 +352,10 @@ Here we will define rules for two NATs, one for `wifi2` and one for `ethernet2`.
 
 
 
+<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image12.png "image_tooltip")
+![alt_text](images/image10.png "image_tooltip")
  \
 
 
@@ -352,48 +394,10 @@ Now we need to set up the OpenVPN Server on MikroTik.
 
 
 
+<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image13.png "image_tooltip")
-
-
-
-#### Create PPP Profile
-
-
-
-* Go to **PPP** -> **Profiles Tab** -> click **+** (new).
-* In the **General Tab**:
-    * Name: `Openvpn` (or any preferred name)
-    * Local Address: `10.100.0.1`
-    * Remote Address: `vpn-pool`
-    * DNS: `8.8.8.8` (or any other DNS server)
-    * Click **OK**.
-
-
-
-
-
-![alt_text](images/image14.png "image_tooltip")
-
-
-
-#### Create VPN User
-
-
-
-* Go to **PPP** -> **Secrets Tab** -> click **+** (new)
-    * Name: `JooJoo` (or any preferred name)
-    * Password: Enter a password.
-    * Service: `ovpn`
-    * Profile: `Openvpn`
-    * Click **OK**.
-
-
-
-
-
-![alt_text](images/image15.png "image_tooltip")
+![alt_text](images/image11.png "image_tooltip")
 
 
 
@@ -413,9 +417,10 @@ Now we need to set up the OpenVPN Server on MikroTik.
 
 
 
+<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image16.png "image_tooltip")
+![alt_text](images/image12.png "image_tooltip")
 
 
 
@@ -427,9 +432,10 @@ Now we need to set up the OpenVPN Server on MikroTik.
 
 
 
+<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image17.png "image_tooltip")
+![alt_text](images/image13.png "image_tooltip")
 
 
 
@@ -446,9 +452,10 @@ Now we need to set up the OpenVPN Server on MikroTik.
 
 
 
+<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image18.png "image_tooltip")
+![alt_text](images/image14.png "image_tooltip")
 
 
 
@@ -460,8 +467,10 @@ Now we need to set up the OpenVPN Server on MikroTik.
 
 
 
+<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-![alt_text](images/image19.png "image_tooltip")
+
+![alt_text](images/image15.png "image_tooltip")
 
 
 
@@ -478,9 +487,10 @@ Now we need to set up the OpenVPN Server on MikroTik.
 
 
 
+<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image20.png "image_tooltip")
+![alt_text](images/image16.png "image_tooltip")
 
 
 
@@ -492,8 +502,10 @@ Now we need to set up the OpenVPN Server on MikroTik.
 
 
 
+<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-![alt_text](images/image21.png "image_tooltip")
+
+![alt_text](images/image17.png "image_tooltip")
 
 
 
@@ -512,9 +524,10 @@ Now we need to set up the OpenVPN Server on MikroTik.
 
 
 
+<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image22.png "image_tooltip")
+![alt_text](images/image18.png "image_tooltip")
 
 
 
@@ -531,9 +544,10 @@ Now we need to set up the OpenVPN Server on MikroTik.
 
 
 
+<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image23.png "image_tooltip")
+![alt_text](images/image19.png "image_tooltip")
 
 
 
@@ -550,8 +564,10 @@ Now we need to set up the OpenVPN Server on MikroTik.
 
 
 
+<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image20.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-![alt_text](images/image24.png "image_tooltip")
+
+![alt_text](images/image20.png "image_tooltip")
 
 
 
@@ -565,9 +581,10 @@ Now we need to set up the OpenVPN Server on MikroTik.
 
 
 
+<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image21.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image25.png "image_tooltip")
+![alt_text](images/image21.png "image_tooltip")
 
 
 
@@ -591,6 +608,47 @@ Now we need to set up the OpenVPN Server on MikroTik.
 This will configure and enable the OpenVPN server interface on your MikroTik router.
 
 
+#### Create PPP Profile
+
+
+
+* Go to **PPP** -> **Profiles Tab** -> click **+** (new).
+* In the **General Tab**:
+    * Name: `Openvpn` (or any preferred name)
+    * Local Address: `10.100.0.1`
+    * Remote Address: `vpn-pool`
+    * DNS: `8.8.8.8` (or any other DNS server)
+    * Click **OK**.
+
+
+
+<p id="gdcalert22" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image22.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image22.png "image_tooltip")
+
+
+
+#### Create VPN User
+
+
+
+* Go to **PPP** -> **Secrets Tab** -> click **+** (new)
+    * Name: `JooJoo` (or any preferred name)
+    * Password: Enter a password.
+    * Service: `ovpn`
+    * Profile: `Openvpn`
+    * Click **OK**.
+
+
+
+<p id="gdcalert23" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image23.png "image_tooltip")
+
+
+
 ### Exporting the Certificates
 
 
@@ -602,12 +660,14 @@ This will configure and enable the OpenVPN server interface on your MikroTik rou
     * Select `CA`.
 * Click **Export** (leave the passphrase blank).
     * Click **Export** on the new window.
+    * File Name: CA (recommended)
 
 
 
+<p id="gdcalert24" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image24.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image26.png "image_tooltip")
+![alt_text](images/image24.png "image_tooltip")
 
 
 
@@ -620,12 +680,14 @@ This will configure and enable the OpenVPN server interface on your MikroTik rou
 * Click **Export**.
     * Enter an export passphrase. This passphrase will be needed later to create the OpenVPN file.
     * Click **Export** again to confirm.
+    * File Name: Client (recommended)
 
 
 
+<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image27.png "image_tooltip")
+![alt_text](images/image25.png "image_tooltip")
 
 
 
@@ -642,9 +704,11 @@ This will configure and enable the OpenVPN server interface on your MikroTik rou
 <p dir="rtl">
 
 
+<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image26.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-<img src="images/image28.png" width="" alt="alt_text" title="image_tooltip">
+<img src="images/image26.png" width="" alt="alt_text" title="image_tooltip">
+</p>
 
 
 **Recommendation**: It's a good idea to click the **Backup** button and create a backup of the settings you've configured so far.
@@ -658,7 +722,7 @@ This will configure and enable the OpenVPN server interface on your MikroTik rou
 
 
 1. **Download and Install OpenSSL**
-    * If you are using Windows, download OpenSSL from a trusted source, such as [this website](https://slproweb.com/products/Win32OpenSSL.html).
+    * If you are using Windows, download OpenSSL from a trusted source.
     * Install OpenSSL.
 2. **Navigate to the Folder with the OpenVPN Files**
     * Go to the folder where you downloaded the OpenVPN files in the previous step.
@@ -667,9 +731,11 @@ This will configure and enable the OpenVPN server interface on your MikroTik rou
 <p dir="rtl">
 
 
+<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image27.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-<img src="images/image29.png" width="" alt="alt_text" title="image_tooltip">
+<img src="images/image27.png" width="" alt="alt_text" title="image_tooltip">
+</p>
 
 
 
@@ -686,108 +752,47 @@ This will configure and enable the OpenVPN server interface on your MikroTik rou
 
 
 
+<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image28.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image28.png "image_tooltip")
+
+
+
+
+5. **Upload Your client.key without Passphrase**
+    * Go to Files -> Click on Upload and upload your client.key wi
+6. **Creating the Client OVPN File**
+    * Go to PPP ->  Interface Tab -> Click on OVPN Server ->
+    * Select Export ovpn
+        1. Server Publ. Address (IP or DNS): Your Static IP
+        2. CA Certificate: Select your CA Certificate file
+        3. Client Certificate: Select your CA Certificate file
+        4. Client Certificate Key: Select your CA Certificate file (the one without passphrase)
+        5. Click on Start
+
+
+
+<p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image29.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image29.png "image_tooltip")
+
+
+
+
+<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image30.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image30.png "image_tooltip")
 
 
 
-#### **_For Linux Users_**
 
-
-
-1. **_Install OpenSSL:_**
-    * _Install OpenSSL if it's not already installed._
-2. **_Import the Client Key:_**
-    * _Move the <code>cert_export_Client.key</code> file to your Linux root directory.</em>
-    * <em>Run the following command to remove the passphrase: \
-<code>openssl rsa -in cert_export_Client.key -out client.key</code></em>
-    * <em>When prompted, enter the passphrase you previously set for the <code>Client</code> file.</em>
-    * <em>This will create a new <code>client.key</code> file without the passphrase.</em>
-
-
-#### <strong>Creating the Client OVPN File</strong>
-
-
-
-1. **Create a New File**:
-    * Go to the folder with the OpenVPN files.
-    * Right-click and create a new text file.
-
-<p dir="rtl">
-
-
-
-
-<img src="images/image31.png" width="" alt="alt_text" title="image_tooltip">
-
-
-
-
-    * Rename this file to `client.ovpn`. If using Windows, change the file extension from `.txt` to `.ovpn` using the Command Line.
-
-<p dir="rtl">
-
-
-
-
-<img src="images/image32.png" width="" alt="alt_text" title="image_tooltip">
-
-
-
-
-2. **Edit the OVPN File**:
-    * Open the `client.ovpn` file with a text editor like Wordpad.
-    * Copy and paste the following configuration into the file. Replace `XX.XX.XX.XX` with your static IP address.
-
-
-```
-client
-dev tun
-proto tcp
-remote XX.XX.XX.XX 1194
-resolv-retry infinite
-nobind
-persist-key
-persist-tun
-cipher AES-256-CBC
-auth SHA1
-comp-lzo
-verb 3
-<ca>
------BEGIN CERTIFICATE-----
-(Insert contents of cert_export_CA.crt here)
------END CERTIFICATE-----
-</ca>
-<cert>
------BEGIN CERTIFICATE-----
-(Insert contents of cert_export_Client.crt here)
------END CERTIFICATE-----
-</cert>
-<key>
------BEGIN PRIVATE KEY-----
-(Insert contents of client.key here)
------END PRIVATE KEY-----
-</key>
-
-```
-
-
-
-3. **Insert Certificate Contents**:
-    * Open each certificate file (`cert_export_CA.crt`, `cert_export_Client.crt`, and `client.key`) with a text editor like Wordpad.
-    * Copy the contents of each file and paste them into the corresponding sections in the `client.ovpn` file.
-
-Your `client.ovpn` file is now ready to be used with OpenVPN to connect to your Mikrotik router.
-
-Example of a file:
-
-
-
-
-
-![alt_text](images/image33.png "image_tooltip")
-
+7. **Transfer your OVPN File**
+    * Go to **Files** and select your OVPN File. 
+        * It should be similar to “Clientxxxx.ovpn”
+    * Right-click on each file and download them.
 
 
 ## Split Tunneling
@@ -816,9 +821,10 @@ Based on our settings, internal traffic goes to the host modem, and internationa
 
 
 
+<p id="gdcalert31" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image31.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert32">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image34.png "image_tooltip")
+![alt_text](images/image31.png "image_tooltip")
 
 
 
@@ -835,9 +841,10 @@ Create a list of Iranian IP addresses based on the IP range of Iran.
 
 
 
+<p id="gdcalert32" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image32.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert33">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image35.png "image_tooltip")
+![alt_text](images/image32.png "image_tooltip")
 
 
 
@@ -848,9 +855,10 @@ Create a list of Iranian IP addresses based on the IP range of Iran.
 
     
 
+<p id="gdcalert33" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image33.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert34">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image36.png "image_tooltip")
+![alt_text](images/image33.png "image_tooltip")
 
 
 4. **Verify the Address List**:
@@ -858,15 +866,11 @@ Create a list of Iranian IP addresses based on the IP range of Iran.
 
 
 
+<p id="gdcalert34" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image34.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert35">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image37.png "image_tooltip")
+![alt_text](images/image34.png "image_tooltip")
 
-
-
-#### Milestone 4
-
-Ensure that the list of Iranian addresses is correctly registered and looks similar to the provided example.
 
 
 #### Enable Remarking and Mangle
@@ -884,9 +888,10 @@ We will use the Packet Marking feature of Mikrotik routers to implement Policy-b
 
 
 
+<p id="gdcalert35" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image35.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert36">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image38.png "image_tooltip")
+![alt_text](images/image35.png "image_tooltip")
 
 
 
@@ -899,9 +904,10 @@ We will use the Packet Marking feature of Mikrotik routers to implement Policy-b
 
 
 
+<p id="gdcalert36" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image36.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert37">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image39.png "image_tooltip")
+![alt_text](images/image36.png "image_tooltip")
 
 
 
@@ -922,9 +928,10 @@ Now we need to connect two Static Routes to the WiFi Interface. The first route 
 
 
 
+<p id="gdcalert37" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image37.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert38">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image40.png "image_tooltip")
+![alt_text](images/image37.png "image_tooltip")
 
 
 
@@ -933,19 +940,28 @@ Now we need to connect two Static Routes to the WiFi Interface. The first route 
     * Go to **IP** -> **Routes** -> click **+**.
     * **General Tab**:
         * Dst. Address: `0.0.0.0/0` (as a default route)
-        * Gateway: `192.168.1.5` (host modem IP)
+        * Gateway: `XX.XX.XX.XX `(your host modem IP - If you don’t know your host modem IP, please read the next step first.)
         * Distance: `10` (This number should be greater than 1 to prioritize between Starlink and the internal internet modem)
         * Routing Table: `main`
     * Note: After confirmation, Scope and Target Scope should auto-populate as Scope: 30 and Target Scope: 10.
 
 
 
+<p id="gdcalert38" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image38.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert39">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image41.png "image_tooltip")
+![alt_text](images/image38.png "image_tooltip")
 
 
-This completes the configuration for split tunneling, ensuring efficient and seamless usage of both internal and international services without the need for constant VPN disconnections.
+
+###### **Find Your Host Modem IP**
+
+_If you already have your host modem IP, please skip this step._
+
+
+
+* _Go to IP -> DHCP Client_
+    * _Copy the IP address of <code>ether2</code> and modify the fourth octet to 1. For example, if the IP address is 192.168.5.7, change it to 192.168.5.1 in your mind. This is your host modem IP.</em>
 
 
 ## Hiding Starlink IP
@@ -957,7 +973,7 @@ To hide the Starlink IP, we will create an additional hub after Starlink to rout
 1. VPS with Mikrotik Router OS
 2. Cloudflare Warp
 
-We recommend using Warp as a last resort, as it may disconnect every few hours. If you cannot purchase a secure VPS, Warp can be an alternative.
+In this document, we focus on the first option, VPS with Mikrotik Router OS.
 
 
 ### Connect to VPS on Mikrotik Router
@@ -984,16 +1000,26 @@ We recommend using Warp as a last resort, as it may disconnect every few hours. 
 
 
 
+<p id="gdcalert39" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image39.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert40">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image42.png "image_tooltip")
+![alt_text](images/image39.png "image_tooltip")
 
 
+
+#### Create NAT
+
+
+
+* Go to **IP** -> **Firewall** -> **NAT Tab** -> click **+** (new).
+* **General Tab**:
+    * Chain: `srcnat`
+* **Action Tab:**
+    * Action: Masquerade
+    * Click **OK**.
 
 #### 
-    **Create PPP Profile**:
-
-
+    **Create PPP Profile**:	
 
     * Go to **PPP** -> **Profiles Tab** -> Default Profile.
     * Name: `default`
@@ -1003,9 +1029,10 @@ We recommend using Warp as a last resort, as it may disconnect every few hours. 
 
 
 
+<p id="gdcalert40" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image40.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert41">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image43.png "image_tooltip")
+![alt_text](images/image40.png "image_tooltip")
 
 
 
@@ -1023,9 +1050,10 @@ We recommend using Warp as a last resort, as it may disconnect every few hours. 
 
 
 
+<p id="gdcalert41" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image41.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert42">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image44.png "image_tooltip")
+![alt_text](images/image41.png "image_tooltip")
 
 
 
@@ -1041,20 +1069,22 @@ We recommend using Warp as a last resort, as it may disconnect every few hours. 
 
 
 
+<p id="gdcalert42" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image42.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert43">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image45.png "image_tooltip")
+![alt_text](images/image42.png "image_tooltip")
 
 
 
 ### Route OpenVPN Traffic to VPS to Hide Starlink IP
+
+Go back to the Winbox of the Mikrotik router.
 
 
 #### **Connect to L2TP Server**:
 
 
 
-    * Go back to the Winbox of the Mikrotik router.
     * Go to **PPP** -> **+** -> **Dial Out Tab**.
     * Connect to: Your VPS IP
     * User: `dima` (VPN user created earlier)
@@ -1065,20 +1095,39 @@ We recommend using Warp as a last resort, as it may disconnect every few hours. 
 
 
 
-
-![alt_text](images/image46.png "image_tooltip")
-
+<p id="gdcalert43" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image43.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert44">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-#### Milestone 5
+![alt_text](images/image43.png "image_tooltip")
+
+
+
+#### Milestone
 
 If L2TP is correctly configured, you should see an `R` (Running) status, either alone or with other letters, in the Status column.
 
 
     
 
+<p id="gdcalert44" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image44.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert45">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-![alt_text](images/image47.png "image_tooltip")
+
+![alt_text](images/image44.png "image_tooltip")
+
+
+Disable wifi2 NAT
+
+
+
+* Go to **IP** -> **Firewall** -> **NAT Tab**
+    * Right-Click on wifi2 and disable it.
+
+
+
+<p id="gdcalert45" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image45.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert46">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image45.png "image_tooltip")
 
 
 
@@ -1089,13 +1138,15 @@ If L2TP is correctly configured, you should see an `R` (Running) status, either 
 * Go to **IP** -> **Firewall** -> **NAT Tab** -> click **+** (new).
 * **General Tab**:
     * Chain: `srcnat`
-    * Src. Address: `192.168.128.0/24` (the IP pool created earlier)
+    * Src. Address: `10.100.0.0/24` (the IP pool created earlier)
+    * Out. Interface: `l2tp-out 1`
 
     
 
+<p id="gdcalert46" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image46.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert47">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image48.png "image_tooltip")
+![alt_text](images/image46.png "image_tooltip")
 
 
 * **Action Tab**:
@@ -1104,9 +1155,10 @@ If L2TP is correctly configured, you should see an `R` (Running) status, either 
 
 
 
+<p id="gdcalert47" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image47.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert48">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image49.png "image_tooltip")
+![alt_text](images/image47.png "image_tooltip")
 
 
 
@@ -1117,15 +1169,17 @@ If L2TP is correctly configured, you should see an `R` (Running) status, either 
 * Go to **IP** -> **Route** -> click **+** (new).
 * **General Tab**:
     * Dst. Address: `0.0.0.0/0`
-    * Gateway: `10.112.112.135` (L2TP Server)
+    * Gateway: `l2tp-out`
     * Distance: `1` (lower number gives higher priority)
+    * Routing-table: `to-starlink`
     * Click **OK**.
 
     
 
+<p id="gdcalert48" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image48.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert49">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image50.png "image_tooltip")
+![alt_text](images/image48.png "image_tooltip")
 
 
 
@@ -1136,28 +1190,16 @@ If L2TP is correctly configured, you should see an `R` (Running) status, either 
 
 * Go to **IP** -> **Route** -> click **+** (new).
 * **General Tab**:
-    * Dst. Address: `0.0.0.0/0` (as a default route)
-    * Gateway: `172.16.5.1` (Public VPS IP or L2TP Server)
+    * Dst. Address: `XX.XX.XX.XX/32` (Your VPS IP + /32)
+    * Gateway: `192.168.1.1` (Starlink)
     * Distance: `1`
-    * Routing Table: `To-Starlink`
+    * Routing Table: `main`
     * Click **OK**.
 
 
 
+<p id="gdcalert49" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image49.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert50">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image51.png "image_tooltip")
+![alt_text](images/image49.png "image_tooltip")
 
-
-
-#### **Change to L2TP**
-
-
-
-* Go to **IP** -> **Firewall** -> click **+** (new).
-    * Out. Interface: l2tp-out1 (change from wifi2)
-
-
-#### **Result of Hiding the Starlink IP**
-
-Now go to IP detection websites such as ip-api.com. The final result should show your VPS IP instead of the Starlink IP for host as well as users.
