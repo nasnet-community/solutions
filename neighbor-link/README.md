@@ -76,7 +76,7 @@ And by adding Infinite Reach, you can:
 
 2. Wait approximately 10 seconds, then click **Check Connection**.
 
-![alt_text](images/image7.png "image_tooltip")
+![alt_text](images/image11.png "image_tooltip")
 
 3. Once connected (status: Connected), proceed to the next step.
 
