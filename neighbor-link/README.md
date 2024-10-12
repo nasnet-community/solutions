@@ -76,7 +76,7 @@ And by adding Infinite Reach, you can:
 
 2. Wait approximately 10 seconds, then click **Check Connection**.
 
-![alt_text](images/image11.png "image_tooltip")
+![alt_text](images/image7.png "image_tooltip")
 
 3. Once connected (status: Connected), proceed to the next step.
 
@@ -89,7 +89,7 @@ And by adding Infinite Reach, you can:
 5. Check your internet connection. If disconnected, toggle the VPN Off and On again, then wait for 20 seconds.
 6. Once everything is working properly, click Next.
 
-![alt_text](images/image8.png "image_tooltip")
+![alt_text](images/image11.png "image_tooltip")
 ![alt_text](images/image9.png "image_tooltip")
 
 ### 9. Sharing Internet with Neighbors (Dashboard Page: Step 4)
