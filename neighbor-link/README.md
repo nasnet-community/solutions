@@ -66,7 +66,7 @@ And by adding Infinite Reach, you can:
 
 > **Important Note:** If there are many WiFi networks around you, you may need to press the scan button and watch the results multiple times to see the WiFi name for Starlink appear in the list.
 
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](images/image12.png "image_tooltip")
 
 ### 7. Connecting to Iranian Internet (Dashboard Page: Step 2)
 
@@ -76,7 +76,7 @@ And by adding Infinite Reach, you can:
 
 2. Wait approximately 10 seconds, then click **Check Connection**.
 
-![alt_text](images/image7.png "image_tooltip")
+![alt_text](images/image13.png "image_tooltip")
 
 3. Once connected (status: Connected), proceed to the next step.
 
@@ -98,7 +98,7 @@ And by adding Infinite Reach, you can:
 2. Set a password for your guest network. Although it is common to leave the password field blank, it is recommended to set a simple password. This helps prevent unauthorized access by passersby who might connect to the system and cause disruptions.
 3. Go to User Management and create unique usernames and passwords for each neighbor (user).
 
-![alt_text](images/image10.png "image_tooltip")
+![alt_text](images/image14.png "image_tooltip")
 
 ### InfiniteReach Remote Access Configuration (Dashboard Page: Step 5)
 ### COMING SOON...
