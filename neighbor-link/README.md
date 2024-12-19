@@ -11,28 +11,26 @@ With NeighborLink, you can:
 * Use both Iranian internet and Starlink internet simultaneously (domestic websites via Iranian internet, blocked websites via Starlink).
 * Share Starlink internet with neighbors.
 
-And by adding Infinite Reach, you can:
+And by adding CityLink, you can:
 * Connect to Starlink remotely through Iranian internet with no geographical restriction.
 * Establish a route to connect to an Outline server.
 
 ## Steps to Set Up NeighborLink
 
 ### 1. Equipment Required
-* [TP-Link Archer C7 | AC1750 - V5](https://www.tp-link.com/de/home-networking/wifi-router/archer-c7/) modem router.
+* A supported router from the list provided in the [Latest Release](https://github.com/nasnet-community/neighbor-link/releases/latest).
 * **Internet from Starlink** with WiFi connectivity.
-* Iranian Internet with the ability to connect via Ethernet.
-* **Network cable** to connect the Iranian internet modem to NeighborLink. (WiFi can be used with slightly more complexity).
+* **Iranian Internet** with the ability to connect via Ethernet.
+* **Network cable** to connect the Iranian internet modem to NeighborLink.
 * **Computer or Laptop** for setup
 
 ### 2. Initial Setup
-
 1. Connect the TP-Link modem to power and wait for it to become accessible.
 2. Access the modem panel and navigate to **System Tools** -> **Firmware**.
 
-
 ![alt_text](images/image1.png "image_tooltip")
 
-3. Download the NeighborLink binary file from our Github [link here](https://github.com/nasnet-community/neighbor-link/releases) and upload it to the modem.
+3. Download the NeighborLink binary file from our Github [link here](https://github.com/nasnet-community/neighbor-link/releases/latest) and upload it to the modem.
     * Select **Browse** from the menu, open the downloaded file, and click **Upgrade**. The upgrade process will take approximately 10 minutes. Do not disconnect the power cable during this time.
 4. After the upgrade, the router will become NeighborLink. Follow the setup steps below.
 
@@ -100,5 +98,28 @@ And by adding Infinite Reach, you can:
 
 ![alt_text](images/image14.png "image_tooltip")
 
-### InfiniteReach Remote Access Configuration (Dashboard Page: Step 5)
-### COMING SOON...
+### 10. CityLink Remote Access Configuration (Dashboard Page: Step 5)
+
+CityLink has additional requirements, these are:
+- A VPS (Virtual Private Server) based in Iran (Minimum Ubuntu 22.04)
+- A domain name configured to point to the IP address of your VPS in Iran
+- An existing Outline key for Outline support
+
+![alt_text](images/image15.png "image_tooltip")
+
+1. Connect to your Iran VPS using SSH
+2. Run the command provided in the Step 5 Instructions
+3. Copy the output of the command from the SSH terminal and paste it in the box called Connection String and click Connect
+
+![alt_text](images/image16.png "image_tooltip")
+
+Once the Status is **Connected** you can now setup the Outline Relay or HTTPS Proxy
+
+
+![alt_text](images/image17.png "image_tooltip")
+
+To set up the HTTPS Proxy, click the setup button and follow the on screen instructions.
+
+![alt_text](images/image18.png "image_tooltip")
+
+To set up the Outline Relay, obtain an existing Outline Key and place it in the Outline Relay setup page and click Convert. This will reveal a Converted Config which you can share.
