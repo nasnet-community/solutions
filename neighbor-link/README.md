@@ -1,4 +1,4 @@
-# NieghborLink Setup Guide
+# NeighborLink Setup Guide
 
 **Estimated Setup Time:** Approximately 1 to 6 hours
 
