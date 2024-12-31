@@ -171,36 +171,43 @@ Here we will define rules for two NATs, one for `wifi2` and one for `ethernet2`.
     * Click **OK**.
 
 ## OpenVPN Server on MikroTik
-
 Now we need to set up the OpenVPN Server on MikroTik.
-
 
 ### VPN Pool Setup
 
-
 #### Create an IP pool for VPN clients:
-
-
-
 * Go to **IP** -> **Pool** -> **Pools Tab** -> click **+** (new).
     * Name: `vpn-pool`
     * Addresses: `10.100.0.2-10.100.0.254`
     * Next Pool: `none`
     * Click **OK**.
 
+![alt_text](images/image13.png "image13")
 
+#### Create PPP Profile:
+* Go to **PPP** -> **Profiles Tab** -> click **+** (new).
+* In the **General Tab**:
+    * Name: `Openvpn` (or any preferred name)
+    * Local Address: `10.100.0.1`
+    * Remote Address: `vpn-pool`
+    * DNS: `8.8.8.8` (or any other DNS server)
+    * Click **OK**.
 
-![alt_text](images/image11.png "image_tooltip")
+![alt_text](images/image14.png "image14")
 
+#### Create VPN User
+* Go to **PPP** -> **Secrets Tab** -> click **+** (new)
+    * Name: `JooJoo` (or any preferred name)
+    * Password: Enter a password.
+    * Service: `ovpn`
+    * Profile: `Openvpn`
+    * Click **OK**.
 
+![alt_text](images/image15.png "image15")
 
 #### Create Certificates
 
-
 ##### Create CA Certificate
-
-
-
 * Go to **System** -> **Certificates** -> **Certificates Tab** -> click **+** (new).
 * In the **General Tab**:
     * Name: `CA`
@@ -208,27 +215,16 @@ Now we need to set up the OpenVPN Server on MikroTik.
     * Key Size: `2048`
     * Days Valid: `3650` (or your preferred duration)
 
-
-
-![alt_text](images/image12.png "image_tooltip")
-
-
-
+![alt_text](images/image16.png "image16")
 
 * In the **Key Usage Tab**:
     * Enable `key cert. sign` and `crl sign`.
     * Uncheck other options.
     * Click **OK**.
 
-
-![alt_text](images/image13.png "image_tooltip")
-
-
+![alt_text](images/image17.png "image17")
 
 ##### Create Server Certificate
-
-
-
 * Go to **System** -> **Certificates** -> **Certificates Tab** -> click **+** (new).
 * In the **General Tab**:
     * Name: `Server`
@@ -236,27 +232,16 @@ Now we need to set up the OpenVPN Server on MikroTik.
     * Key Size: `2048`
     * Days Valid: `3650`
 
-
-
-![alt_text](images/image14.png "image_tooltip")
-
-
-
+![alt_text](images/image18.png "image18")
 
 * In the **Key Usage Tab**:
     * Enable `digital signature`, `key encipherment`, and `tls server`.
     * Uncheck other options.
     * Click **OK**.
 
-
-![alt_text](images/image15.png "image_tooltip")
-
-
+![alt_text](images/image19.png "image19")
 
 ##### Create Client Certificate
-
-
-
 * Go to **System** -> **Certificates** -> **Certificates Tab** -> click **+** (new).
 * In the **General Tab**:
     * Name: `Client`
@@ -264,45 +249,26 @@ Now we need to set up the OpenVPN Server on MikroTik.
     * Key Size: `2048`
     * Days Valid: `3650`
 
-
-
-![alt_text](images/image16.png "image_tooltip")
-
-
-
+![alt_text](images/image20.png "image20")
 
 * In the **Key Usage Tab**:
     * Enable `tls client`.
     * Uncheck other options.
     * Click **OK**.
 
-
-
-![alt_text](images/image17.png "image_tooltip")
-
-
+![alt_text](images/image21.png "image21")
 
 #### Signing the Certificates
-
-
 ##### Signing the CA Certificate
-
-
-
 * Go to **System** -> **Certificates** -> **Certificates Tab**.
     * Select `CA`
 * Click **Sign**.
     * Certificate: `CA`
     * Click **Start** (this may take some time).
 
-![alt_text](images/image18.png "image_tooltip")
-
-
+![alt_text](images/image22.png "image22")
 
 ##### Signing the Server Certificate
-
-
-
 * Go to **System** -> **Certificates** -> **Certificates Tab**.
     * Select `Server`
 * Click **Sign**.
@@ -310,16 +276,9 @@ Now we need to set up the OpenVPN Server on MikroTik.
     * CA: `CA`
     * Click **Start**.
 
-
-
-![alt_text](images/image19.png "image_tooltip")
-
-
+![alt_text](images/image23.png "image23")
 
 ##### Signing the Client Certificate
-
-
-
 * Go to **System** -> **Certificates** -> **Certificates Tab**.
     * Select `Client`
 * Click **Sign**.
@@ -327,28 +286,16 @@ Now we need to set up the OpenVPN Server on MikroTik.
     * CA: `CA`
     * Click **Start**.
 
-
-![alt_text](images/image20.png "image_tooltip")
-
-
+![alt_text](images/image24.png "image24")
 
 ##### Trusting the Certificates
-
-
-
 * Go to **System** -> **Certificates** -> **Certificates Tab**.
 * Select `CA`, `Server`, and `Client` (one by one).
     * Check the **Trusted** box for each.
 
+![alt_text](images/image25.png "image25")
 
-![alt_text](images/image21.png "image_tooltip")
-
-
-
-### **OpenVPN Server Interface Setup**
-
-
-
+### OpenVPN Server Interface Setup
 * Go to **PPP** -> **Interface Tab** -> **OVPN Server**.
     * Enabled: ✅
     * Port: `1194` (or another free port)
@@ -364,105 +311,35 @@ Now we need to set up the OpenVPN Server on MikroTik.
 
 This will configure and enable the OpenVPN server interface on your MikroTik router.
 
-
-#### Create PPP Profile
-
-
-
-* Go to **PPP** -> **Profiles Tab** -> click **+** (new).
-* In the **General Tab**:
-    * Name: `Openvpn` (or any preferred name)
-    * Local Address: `10.100.0.1`
-    * Remote Address: `vpn-pool`
-    * DNS: `8.8.8.8` (or any other DNS server)
-    * Click **OK**.
-
-
-
-![alt_text](images/image22.png "image_tooltip")
-
-
-
-#### Create VPN User
-
-
-
-* Go to **PPP** -> **Secrets Tab** -> click **+** (new)
-    * Name: `JooJoo` (or any preferred name)
-    * Password: Enter a password.
-    * Service: `ovpn`
-    * Profile: `Openvpn`
-    * Click **OK**.
-
-
-
-![alt_text](images/image23.png "image_tooltip")
-
-
-
 ### Exporting the Certificates
-
-
 #### Exporting the CA Certificate
-
-
-
 * Go to **System** -> **Certificates** -> **Certificates Tab**.
     * Select `CA`.
 * Click **Export** (leave the passphrase blank).
     * Click **Export** on the new window.
-    * File Name: CA (recommended)
 
-
-
-![alt_text](images/image24.png "image_tooltip")
-
-
+![alt_text](images/image26.png "image26")
 
 #### Exporting the Client Certificate
-
-
-
 * Go to **System** -> **Certificates** -> **Certificates Tab**.
     * Select `Client`.
 * Click **Export**.
     * Enter an export passphrase. This passphrase will be needed later to create the OpenVPN file.
     * Click **Export** again to confirm.
-    * File Name: Client (recommended)
 
-
-
-![alt_text](images/image25.png "image_tooltip")
-
-
+![alt_text](images/image27.png "image27")
 
 #### Transferring the Files
-
-
-
 * Go to **Files** and select the three certificate files. Their names should be similar to:
     * `cert_export_CA.crt` (or `CA.crt`)
     * `cert_export_Client.crt` (or `Client.crt`)
     * `cert_export_Client.key` (or `Client.key`)
 * Right-click on each file and download them.
 
-<p dir="rtl">
-
-
-<img src="images/image26.png" width="" alt="alt_text" title="image_tooltip">
-</p>
-
-
-**Recommendation**: It's a good idea to click the **Backup** button and create a backup of the settings you've configured so far.
-
+![alt_text](images/image28.png "image28")
 
 ### Create Client Ovpn File
-
-
 #### Removing the Passphrase from the Client Key
-
-
-
 1. **Download and Install OpenSSL**
     * If you are using Windows, download OpenSSL from a trusted source.
     * Install OpenSSL.
@@ -470,59 +347,82 @@ This will configure and enable the OpenVPN server interface on your MikroTik rou
     * Go to the folder where you downloaded the OpenVPN files in the previous step.
     * Copy the folder path. (For example, by right clicking on the address bar and selecting copy address)
 
-<p dir="rtl">
-
-
-<img src="images/image27.png" width="" alt="alt_text" title="image_tooltip">
-</p>
-
-
-
+![alt_text](images/image29.png "image29")
 
 3. **Open OpenSSL**
     * Use the `cd` command to navigate to the folder with the OpenVPN files. For example: \
-`cd C:\Users\XXXX\Desktop\OpenVPN`
+    `cd C:\Users\XXXX\Desktop\OpenVPN`
     * Replace `XXXX` with your actual username in Windows.
+
 4. **Run OpenSSL to Remove the Passphrase**
     * In the Command Prompt, enter the following command (replace `cert_export_Client.key` with your actual file name): \
-`openssl rsa -in cert_export_Client.key -out client.key`
+    `openssl rsa -in cert_export_Client.key -out client.key`
     * When prompted, enter the passphrase you previously set for the `Client` file.
     * This will create a new `client.key` file without the passphrase.
 
+![alt_text](images/image30.png "image30")
 
+#### For Linux Users
+1. **Install OpenSSL**
+    * Install OpenSSL if it's not already installed.
+2. **Import the Client Key**
+    * Move the `cert_export_Client.key` file to your Linux root directory.
+    * Run the following command to remove the passphrase: \
+    `openssl rsa -in cert_export_Client.key -out client.key`
+    * When prompted, enter the passphrase you previously set for the `Client` file.
+    * This will create a new `client.key` file without the passphrase.
 
-![alt_text](images/image28.png "image_tooltip")
+#### Creating the Client OVPN File
+1. **Create a New File**
+    * Go to the folder with the OpenVPN files.
+    * Right-click and create a new text file.
+    ![alt_text](images/image31.png "image31")
+    * Rename this file to `client.ovpn`. If using Windows, change the file extension from `.txt` to `.ovpn` using the Command Line.
 
+![alt_text](images/image32.png "image32")
 
+2. **Edit the OVPN File**
+    * Open the `client.ovpn` file with a text editor like Wordpad.
+    * Copy and paste the following configuration into the file. Replace `XX.XX.XX.XX` with your static IP address.
 
+```
+client
+dev tun
+proto tcp
+remote XX.XX.XX.XX 1194
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+cipher AES-256-CBC
+auth SHA1
+comp-lzo
+verb 3
+<ca>
+-----BEGIN CERTIFICATE-----
+(Insert contents of cert_export_CA.crt here)
+-----END CERTIFICATE-----
+</ca>
+<cert>
+-----BEGIN CERTIFICATE-----
+(Insert contents of cert_export_Client.crt here)
+-----END CERTIFICATE-----
+</cert>
+<key>
+-----BEGIN PRIVATE KEY-----
+(Insert contents of client.key here)
+-----END PRIVATE KEY-----
+</key>
+```
 
-5. **Upload Your client.key without Passphrase**
-    * Go to Files -> Click on Upload and upload your client.key wi
-6. **Creating the Client OVPN File**
-    * Go to PPP ->  Interface Tab -> Click on OVPN Server ->
-    * Select Export ovpn
-        1. Server Publ. Address (IP or DNS): Your Static IP
-        2. CA Certificate: Select your CA Certificate file
-        3. Client Certificate: Select your CA Certificate file
-        4. Client Certificate Key: Select your CA Certificate file (the one without passphrase)
-        5. Click on Start
+3. **Insert Certificate Contents**
+    * Open each certificate file (`cert_export_CA.crt`, `cert_export_Client.crt`, and `client.key`) with a text editor like Wordpad.
+    * Copy the contents of each file and paste them into the corresponding sections in the `client.ovpn` file.
 
+Your `client.ovpn` file is now ready to be used with OpenVPN to connect to your Mikrotik router.
 
-![alt_text](images/image29.png "image_tooltip")
-
-
-
-
-![alt_text](images/image30.png "image_tooltip")
-
-
-
-
-7. **Transfer your OVPN File**
-    * Go to **Files** and select your OVPN File. 
-        * It should be similar to “Clientxxxx.ovpn”
-    * Right-click on each file and download them.
-
+Example of a file:
+![alt_text](images/image33.png "image33")
 
 ## Split Tunneling
 
