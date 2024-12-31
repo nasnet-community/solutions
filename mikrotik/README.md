@@ -1,27 +1,16 @@
 # Bypassing Iranian Internet Censorship
 
-
-## A Comprehensive Guide to Using **Starlink**, **Mikrotik Router**, and **OpenVPN** for Secure Remote Access
-
+#### A Comprehensive Guide to Using **Starlink**, **Mikrotik Router**, and **OpenVPN** for Secure Remote Access
 
 ## Introduction
-
 This document provides a step-by-step guide for installing and configuring the OpenVPN service on a Mikrotik router. The main goal is to create a **secure** tunnel to Starlink, allowing **multiple users** to access **uncensored** Starlink internet through OpenVPN from with **no geographical restrictions** while connected to the internal Iranian network. While this method can be applied to other routers, we strongly recommend using the specified devices.
 
-
 ### Glossary
-
-
-
 * **Host**: The person who owns, installs and configures the Starlink connection.
 * **User**: The person who remotely connects to Starlink using OpenVPN.
 * **Host Modem**: The modem that manages traffic between the internal Iranian network and the Mikrotik router.
 
-
 ### Objectives and Setup Steps
-
-
-
 1. **Connecting Users to the Host Modem via Internal Internet**: Users can connect to the host modem through the internal internet using an OpenVPN client. This ensures all traffic between the user and the host is encrypted. The steps for this phase are marked in the manual.
 2. **Forwarding User Requests to the Mikrotik Router**: Requests from users are transmitted from the host modem to the Mikrotik router.
 3. **Split Tunneling on the Mikrotik Router**:
@@ -29,47 +18,24 @@ This document provides a step-by-step guide for installing and configuring the O
     * **International Requests**: These are directed to Starlink and the global internet network.
 4. **Hiding Starlink IP**: The Starlink IP is concealed using a VPS, which is positioned after the Starlink connection. Mikrotik routers are not compatible with VPNs like NordVPN or ExpressVPN.
 
-
 ### Benefits of Following All Steps
-
-
-
 * **Access to Internal Services**: Users can access internal services and satellite internet without being identified or having to turn on/off his VPN.
 * **Hiding Starlink IP**: The Starlink IP is hidden from users.
 * **Simultaneous Use by Multiple Users**: This method allows multiple users to use the Starlink internet at the same time.
 * **No Geographical Restrictions**: Users can connect to Starlink from any location.
 
-
-### Can I Skip Some Steps?
-
-It's recommended to follow all steps carefully. However, if security is less of a concern for you, you can skip the following steps:
-
-
-
-* **Skip Split Tunneling**: If you don't want to separate Iranian and international traffic, you can skip the split tunneling steps. But if you do, users will need to turn off their VPN whenever they want to access internal services like banking, since the Starlink IP is non-Iranian.
-* **Skip Hiding Starlink IP**: If you don't want to hide the Starlink IP, you can skip these steps. Proper split tunneling makes hiding the IP less critical, but there is a high risk that internal services might detect Starlink usage. Also, users will know they're connected to a Starlink device.
-* **Skip Static IP**: You can skip obtaining a static IP, though it means you'll need to update your Mikrotik router configuration more frequently. Without a static IP, if the host modem is off for several hours or the ISP changes the IP, you'll have to update configurations. This usually happens every few months, so having a static IP is not essential.
-* **Starlink Device Generation**: This manual is designed for Starlink generations 1 and 2, which usually don't have an adapter in Iran. Users with an adapter or using generation 3 and beyond can connect their Starlink directly to the Mikrotik router via cable, avoiding the WiFi setup steps in this manual. However, completing these steps will allow for wireless connection of the Starlink router to the Mikrotik router.
-
-
-### **Disadvantages of This Method**
-
-
-
+### Disadvantages of This Method
 * **Complex Setup**: This method requires precision and skill for setup. It's recommended to use the suggested methods and devices.
 * **Need for a Static IP**: The host needs to use a static IP. However, if you can inform users of the new IP whenever it changes, a static IP is not strictly necessary.
 * **Increased Internet Usage for Host**: This method will increase the host's internet usage. (Costs can be shared among users, making this method more cost-effective and faster than a normal VPN.)
 
+### Recommendations
+Depending on your familiarity with networking, OpenVPN, and Mikrotik routers, allocate between 2 hours to 3 days for installing and setting up this system. We recommend using the suggested software, tools, and devices to achieve your desired results more quickly and reliably. If you use other methods or tools, please share your experiences with us in our Telegram Group [https://t.me/joinNASNETGroup](https://t.me/joinNASNETGroup) to help others benefit from different approaches. Our goal is to enhance the knowledge and literature around this topic.
 
-### **Recommendations**
+> [!NOTE]
+> This manual is designed for Starlink generations 1 and 2, which usually don't have an ethernet adapter in Iran. Users with an ethernet adapter or using > generation 3 and beyond can connect their Starlink directly to the Mikrotik router via cable, avoiding the WiFi setup steps in this manual. However, completing these steps will allow for wireless connection of the Starlink router to the Mikrotik router.
 
-Depending on your familiarity with networking, OpenVPN, and Mikrotik routers, allocate between 2 hours to 3 days for installing and setting up this system. We recommend using the suggested software, tools, and devices to achieve your desired results more quickly and reliably. If you use other methods or tools, please share your experiences on our forums to help others benefit from different approaches. Our goal is to enhance the knowledge and literature around this topic.
-
-
-### **Required Tools and Equipment**
-
-
-
+### Required Tools and Equipment
 * Mikrotik router hap ax2
 * Modem and static IP
 * Starlink modem and receiver
@@ -79,147 +45,94 @@ Depending on your familiarity with networking, OpenVPN, and Mikrotik routers, al
 * [Mikrotik Winbox](https://mikrotik.com/download)
 * A note-taking tool
 
-
-### **Topology**
-
-
-![alt_text](images/image1.png "image_tooltip")
-
-
+### Topology
+![alt_text](images/image1.png "image1")
 
 ## Setup
-
-
-
 1. Install the Winbox application. We do not recommend using web applications since they might have different default configurations.
 2. Connect one of the yellow ports on your ADSL modem to the Lan2 port on the Mikrotik router. Please do not change this port or plug the cable into another port during the setup.
 3. Connect the Lan3 port on the Mikrotik router to your computer. Again, do not change this port or plug the cable into another port during the setup.
 
-
-### **Connect**
-
-
-
+### Connect
 * Connect to: 192.168.88.1
 * Login: (found on your Mikrotik router)
 * Password: (found on your Mikrotik router)
 * Click on Connect.
-* On your first login, you may be prompted to change your password. Choose a password that is easy to type, as you will need to enter it multiple times in Winbox during the setup.
+* On your first login, you may be prompted to change your password.
 * Go to the Setting Menu and deselect Hide Password (to make things easier).
 
+#### Milestone 1
+If you have trouble logging in, you can find the IP 192.168.88.1 under the Neighbors tab and log in from there.
 
-### **Remove Slave from Interface**
+If this IP does not appear in the neighbors list, please physically reset the router and try again.
 
-<span style="text-decoration:underline;">In some routers</span>, `wifi2` or `ether2` are set as slaves by default. This setting needs to be disabled.
+Sometimes the IP might not work, and you need to click on the MAC Address column record to replace the IP with the MAC address in the Connect To field. The MAC address associated with IP 192.168.88.1 is obscured in this image.
+![alt_text](images/image2.png "image2")
 
-
+### Remove Slave from Interface
+**In some routers**, `wifi2` or `ether2` are set as slaves by default. This setting needs to be disabled.
 
 * Go to **Bridge** (left menu) -> **Ports**
 * For `ether2`: Right-click and select **Remove**
 * For `wifi2`: Right-click and select **Remove**
 
-**Note**: <span style="text-decoration:underline;">In some cases</span>, `wifi2` and `ether2` might not be listed under Ports. If this is the case, you can proceed to the next step.
+> [!NOTE]
+> **In some cases**, `wifi2` and `ether2` might not be listed under Ports. If this is the case, you can proceed to the next step.
 
+#### Milestone 2
+If `ether2` and `wifi2` are listed here and you still have internet through LAN despite turning off your WiFi, removing `ether2` and `wifi2` should disconnect your LAN internet.
+![alt_text](images/image3.png "image3")
 
 #### Backup
-
 We recommend creating a backup of your settings after each step. To do this:
-
-
-
 * Go to **Files** -> **Backup**
 
-
 ## Wireless and Ethernet Interfaces
-
 In this section, we will create two interfaces: a WiFi interface as a WiFi Station to connect to the Starlink modem and an Ethernet interface to connect to the host modem with a static IP.
 
-
 ### WiFi Station Setup in MikroTik Wireless Router
-
 By enabling Wireless Station Mode, we can set up the WiFi Client. To enable Wireless Station Mode, follow these two steps:
 
-
 #### DHCP Client Configuration on Wireless Interface
-
-
-
 * Go to **IP** -> **DHCP Client** -> click **+** (new)
     * Interface: `wifi2`
     * Use Peer DNS: ✅
     * Use Peer NTP: ✅
     * Add Default Route: No
 
-
-
-![alt_text](images/image2.png "image_tooltip")
-
-
+![alt_text](images/image4.png "image4")
 
 #### Wireless Station Configuration on Wireless Interface
-
 Configure the Wireless Station to connect to the Starlink WiFi SSID:
-
-
-
 * Go to **Interfaces** -> Right-click on `wifi2` and enable -> double-click `wifi2` to open -> **General Tab**
     * Mode: `Station`
 
-
-![alt_text](images/image3.png "image_tooltip")
-
-
-
-
+![alt_text](images/image5.png "image5")
 * Go to **Security Tab**
     * Authentication Type: `WPA PSK`, `WPA2 PSK`
     * Passphrase: Your Starlink Password
     * Click **Apply**
 
-
-![alt_text](images/image4.png "image_tooltip")
-
-
-
-
+![alt_text](images/image6.png "image6")
 * Click **Scan**
     * Interface: `wifi2`
     * Click **Start**
     * Select your SSID (Starlink)
     * Click **Connect**
 
+![alt_text](images/image7.png "image7")
 
-![alt_text](images/image5.png "image_tooltip")
-
-
-
-#### Milestone
-
+#### Milestone 3
 If you have followed the steps correctly, the status of `wifi2` should show as `RMB` or `RSMB`. The letter `R` in the status column indicates that the interface is running.
+![alt_text](images/image8.png "image8")
 
-
-![alt_text](images/image6.png "image_tooltip")
-
-
-
-### **Ethernet Interface Setup**
-
-
+### Ethernet Interface Setup
 #### Connect the Ethernet port to your host modem
-
-
-
 * Go to **Interface** -> **Interface Tab** -> right-click on `ether2` and select **Enable**.
 
-
-![alt_text](images/image7.png "image_tooltip")
-
-
+![alt_text](images/image9.png "image9")
 
 #### DHCP Client for Ethernet Interface
-
-
-
 * Go to **IP** -> **DHCP Client** -> click **+** (new).
 * In the **DHCP Tab**:
     * Interface: `ether2`
@@ -227,49 +140,27 @@ If you have followed the steps correctly, the status of `wifi2` should show as `
     * Use Peer NTP: ✅
     * Add Default Route: No
 
-
-
-![alt_text](images/image8.png "image_tooltip")
-
-
+![alt_text](images/image10.png "image10")
 
 ### NAT Setup
-
 Here we will define rules for two NATs, one for `wifi2` and one for `ethernet2`. The source NAT will be the VPN-Pool Addresses.
 
-
 #### NAT for Ethernet Interface
-
-
-
 * Go to **IP** -> **Firewall** -> **NAT Tab** -> click **+** (new).
 * In the **General Tab**:
     * Chain: `srcnat`
     * Src. Address: `10.100.0.0/24`
     * Out. Interface: `ether2`
 
-
-![alt_text](images/image9.png "image_tooltip")
-
-
-
+![alt_text](images/image11.png "image11")
 
 * Go to the **Action Tab**:
     * Action: `Masquerade`
     * Click **OK**.
 
-
-
-
-![alt_text](images/image10.png "image_tooltip")
- \
-
-
+![alt_text](images/image12.png "image12")
 
 #### NAT for WiFi Interface
-
-
-
 * Go to **IP** -> **Firewall** -> **NAT Tab** -> click **+** (new).
 * In the **General Tab**:
     * Chain: `srcnat`
@@ -278,7 +169,6 @@ Here we will define rules for two NATs, one for `wifi2` and one for `ethernet2`.
 * Go to the **Action Tab**:
     * Action: `Masquerade`
     * Click **OK**.
-
 
 ## OpenVPN Server on MikroTik
 
